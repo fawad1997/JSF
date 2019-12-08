@@ -12,5 +12,12 @@
         Your name is #{student.firstName} #{student.lastName} and your gender is #{student.gender}
         <br/>
         You live in #{student.country}
+        <br/>
+        Your skills are:
+        <ol>
+            <ui:repeat value="#{student.favLanguages}" var="language">
+                <li>#{language}</li>
+            </ui:repeat>
+        </ol>
     </h:body>
 </html>

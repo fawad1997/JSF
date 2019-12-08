@@ -11,6 +11,7 @@ public class Student {
     private String country;
     private List<String> countryOptions;
     private String gender;
+    private String[] favLanguages;
 
     public Student() {
         countryOptions = new ArrayList<String>();
@@ -56,5 +57,13 @@ public class Student {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String[] getFavLanguages() {
+        return favLanguages;
+    }
+
+    public void setFavLanguages(String[] favLanguages) {
+        this.favLanguages = favLanguages;
     }
 }

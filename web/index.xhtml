@@ -25,6 +25,14 @@
                <f:selectItem itemValue="female" itemLabel="FeMale" />
             </h:selectOneRadio>
             <br/>
+
+            Skills:
+            <h:selectManyCheckbox value="#{student.favLanguages}">
+               <f:selectItem itemValue="php" itemLabel="php" />
+               <f:selectItem itemValue="java" itemLabel="java" />
+               <f:selectItem itemValue="c#" itemLabel="C#" />
+            </h:selectManyCheckbox>
+            <br/>
             <h:commandButton value="Submit" action="student_reponse" />
          </h:form>
       </h:form>
