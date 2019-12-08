@@ -19,6 +19,12 @@
                <f:selectItems value="#{student.countryOptions}"/>
             </h:selectOneMenu>
             <br/>
+            Gender:
+            <h:selectOneRadio value="#{student.gender}">
+               <f:selectItem itemValue="male" itemLabel="Male" />
+               <f:selectItem itemValue="female" itemLabel="FeMale" />
+            </h:selectOneRadio>
+            <br/>
             <h:commandButton value="Submit" action="student_reponse" />
          </h:form>
       </h:form>

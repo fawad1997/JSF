@@ -10,6 +10,7 @@ public class Student {
     private String lastName;
     private String country;
     private List<String> countryOptions;
+    private String gender;
 
     public Student() {
         countryOptions = new ArrayList<String>();
@@ -47,5 +48,13 @@ public class Student {
 
     public void setCountryOptions(List<String> countryOptions) {
         this.countryOptions = countryOptions;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
