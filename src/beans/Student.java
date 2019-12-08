@@ -1,6 +1,7 @@
 package beans;
 
 import javax.faces.bean.ManagedBean;
+import java.util.ArrayList;
 import java.util.List;
 
 @ManagedBean
@@ -11,7 +12,9 @@ public class Student {
     private List<String> countryOptions;
 
     public Student() {
-
+        countryOptions = new ArrayList<String>();
+        countryOptions.add("Pakistan");
+        countryOptions.add("India");
     }
 
     public String getFirstName() {

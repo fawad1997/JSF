@@ -16,9 +16,7 @@
             Last Name: <h:inputText value="#{student.lastName}" />
             <br/>
             <h:selectOneMenu value="#{student.country}">
-               <f:selectItem itemValue="Pakistan" itemLabel="Pakistan" />
-               <f:selectItem itemValue="ind" itemLabel="India" />
-               <f:selectItem itemValue="cn" itemLabel="China" />
+               <f:selectItems value="#{student.countryOptions}"/>
             </h:selectOneMenu>
             <br/>
             <h:commandButton value="Submit" action="student_reponse" />
