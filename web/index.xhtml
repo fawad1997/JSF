@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <h:head>
+
+   </h:head>
+   <h:body>
+      <h:form>
+         <h:form>
+            First Name: <h:inputText value="#{student.firstName}" />
+            <br/>
+            Last Name: <h:inputText value="#{student.lastName}" />
+            <br/>
+            <h:selectOneMenu value="#{student.country}">
+               <f:selectItem itemValue="Pakistan" itemLabel="Pakistan" />
+               <f:selectItem itemValue="ind" itemLabel="India" />
+               <f:selectItem itemValue="cn" itemLabel="China" />
+            </h:selectOneMenu>
+            <br/>
+            <h:commandButton value="Submit" action="student_reponse" />
+         </h:form>
+      </h:form>
+   </h:body>
+</html>
