@@ -28,6 +28,13 @@
          </h:inputText>
          <h:message for="age" styleClass="error"/>
          <br/>
+
+         CNIC:
+         <h:inputText id="cnic" label="CNIC" required="true" value="#{student.cnic}" >
+            <f:validateRegex pattern="\d{5}-\d{7}-\d{1}"/>
+         </h:inputText>
+         <h:message for="cnic" styleClass="error"/>
+         <br/>
             Last Name: <h:inputText label="Last Name" id="last_name" required="true" requiredMessage="Your last name is mandoratory" value="#{student.lastName}" />
             <h:message for="last_name"/>
             <br/>

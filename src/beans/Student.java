@@ -8,6 +8,7 @@ import java.util.List;
 public class Student {
     private String firstName;
     private String lastName;
+    private String cnic;
     private String country;
     private List<String> countryOptions;
     private String gender;
@@ -76,5 +77,13 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getCnic() {
+        return cnic;
+    }
+
+    public void setCnic(String cnic) {
+        this.cnic = cnic;
     }
 }
