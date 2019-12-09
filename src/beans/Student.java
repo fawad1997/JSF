@@ -12,6 +12,7 @@ public class Student {
     private List<String> countryOptions;
     private String gender;
     private String[] favLanguages;
+    private int age;
 
     public Student() {
         firstName = "Fawad";
@@ -67,5 +68,13 @@ public class Student {
 
     public void setFavLanguages(String[] favLanguages) {
         this.favLanguages = favLanguages;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

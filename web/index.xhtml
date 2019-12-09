@@ -16,8 +16,17 @@
 
       <h:form>
          <h:messages styleClass="error" />
-            First Name: <h:inputText id="first_name" label="First Name" required="true" value="#{student.firstName}" />
+         First Name:
+         <h:inputText id="first_name" label="First Name" required="true" value="#{student.firstName}" >
+            <f:validateLength minimum="2" maximum="50"/>
+         </h:inputText>
             <h:message for="first_name" styleClass="error"/>
+         <br/>
+         Age:
+         <h:inputText id="age" label="Age" required="true" value="#{student.age}" >
+            <f:validateLongRange minimum="0" maximum="120"/>
+         </h:inputText>
+         <h:message for="age" styleClass="error"/>
          <br/>
             Last Name: <h:inputText label="Last Name" id="last_name" required="true" requiredMessage="Your last name is mandoratory" value="#{student.lastName}" />
             <h:message for="last_name"/>
