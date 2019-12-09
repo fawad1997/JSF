@@ -1,6 +1,12 @@
 package beans;
 
+import sun.security.validator.ValidatorException;
+
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.xml.bind.ValidationException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +14,7 @@ import java.util.List;
 public class Student {
     private String firstName;
     private String lastName;
+    private String regNo;
     private String cnic;
     private String country;
     private List<String> countryOptions;
@@ -86,4 +93,13 @@ public class Student {
     public void setCnic(String cnic) {
         this.cnic = cnic;
     }
+
+    public String getRegNo() {
+        return regNo;
+    }
+
+    public void setRegNo(String regNo) {
+        this.regNo = regNo;
+    }
+
 }

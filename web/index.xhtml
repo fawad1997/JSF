@@ -35,6 +35,12 @@
          </h:inputText>
          <h:message for="cnic" styleClass="error"/>
          <br/>
+         Reg no:
+         <h:inputText id="reg" label="Registration No" required="true" value="#{student.regNo}">
+            <f:validateRegex pattern="bcs\d{6}"
+         </h:inputText>
+         <h:message for="reg" styleClass="error"/>
+         <br/>
             Last Name: <h:inputText label="Last Name" id="last_name" required="true" requiredMessage="Your last name is mandoratory" value="#{student.lastName}" />
             <h:message for="last_name"/>
             <br/>
