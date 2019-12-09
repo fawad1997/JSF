@@ -6,12 +6,17 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <h:head>
-
+      <style>
+         .error{
+            color: red;
+         }
+      </style>
    </h:head>
    <h:body>
+
       <h:form>
-         <h:form>
-            First Name: <h:inputText value="#{student.firstName}" />
+         <h:messages styleClass="error" />
+            First Name: <h:inputText label="First Name" required="true" value="#{student.firstName}" />
             <br/>
             Last Name: <h:inputText value="#{student.lastName}" />
             <br/>
@@ -34,7 +39,6 @@
             </h:selectManyCheckbox>
             <br/>
             <h:commandButton value="Submit" action="student_reponse" />
-         </h:form>
       </h:form>
    </h:body>
 </html>

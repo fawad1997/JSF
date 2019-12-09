@@ -14,6 +14,8 @@ public class Student {
     private String[] favLanguages;
 
     public Student() {
+        firstName = "Fawad";
+        lastName = "Bin Tariq";
         countryOptions = new ArrayList<String>();
         countryOptions.add("Pakistan");
         countryOptions.add("India");
