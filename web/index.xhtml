@@ -16,9 +16,11 @@
 
       <h:form>
          <h:messages styleClass="error" />
-            First Name: <h:inputText label="First Name" required="true" value="#{student.firstName}" />
-            <br/>
-            Last Name: <h:inputText value="#{student.lastName}" />
+            First Name: <h:inputText id="first_name" label="First Name" required="true" value="#{student.firstName}" />
+            <h:message for="first_name" styleClass="error"/>
+         <br/>
+            Last Name: <h:inputText label="Last Name" id="last_name" required="true" requiredMessage="Your last name is mandoratory" value="#{student.lastName}" />
+            <h:message for="last_name"/>
             <br/>
             <h:selectOneMenu value="#{student.country}">
                <f:selectItems value="#{student.countryOptions}"/>
